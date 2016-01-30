@@ -1,0 +1,50 @@
+.content {
+    flex-grow: 1;
+    font-size: 18px;
+
+    max-width: 840px;
+    line-height: 1.8;
+    margin-bottom: 44px;
+}
+
+.content__title {
+    font-weight: normal;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    font-weight: normal;
+    text-shadow: 1px 1px #fff;
+    margin-bottom: 0;
+}
+
+.content p {
+    margin: 18px 0 0;
+}
+
+a {
+    color: #739fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #364b77;
+}
+
+.content ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.content li {
+    position: relative;
+    list-style: none;
+}
+
+.content li:before {
+    position: absolute;
+    left: -26px;
+    content: '— ';
+}

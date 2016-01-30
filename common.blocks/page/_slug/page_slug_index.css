@@ -1,0 +1,14 @@
+.page_slug_index {
+    background: #eef5ff url(page_slug_index.jpg) no-repeat 94% 40px fixed;
+    background-size: auto 100%;
+}
+
+.page_slug_index .content {
+    padding-right: 400px;
+}
+
+.position {
+    margin-top: -20px;
+    font-size: 18px;
+    padding-left: 2px;
+}
