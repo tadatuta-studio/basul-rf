@@ -27,15 +27,15 @@
 
 Комплексное сопровождение процедуры банкротства.
 
-### [Банкротство гражданина](/bankruptcy/)
+### [Банкротство гражданина](bankruptcy/)
 
 ### Банкротство юридического лица
 
-* [Конкурсное производство](/bankruptcy-proceedings/)
-* [Внешнее управление](/external-management/)
-* [Финансовое оздаровление](/financial-recovery/)
-* [Мировое соглашение](/settlement-agreement/)
-* [Процедура наблюдения](/supervision-procedure/)
+* [Конкурсное производство](bankruptcy-proceedings/)
+* [Внешнее управление](external-management/)
+* [Финансовое оздаровление](financial-recovery/)
+* [Мировое соглашение](settlement-agreement/)
+* [Процедура наблюдения](supervision-procedure/)
 
 ## Контакты
 
