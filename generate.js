@@ -16,7 +16,9 @@ var fs = require('fs'),
 
 mkdirp.sync(path.join(outputFolder, 'i'));
 
-fs.writeFileSync(path.join(outputFolder, 'CNAME'), 'басюл.рф');
+fs.writeFileSync(path.join(outputFolder, 'CNAME'), 'xn--80ab5ax9d.xn--p1ai');
+
+fs.createReadStream(path.join(contentFolder, 'favicon.ico')).pipe(fs.createWriteStream(path.join(outputFolder, 'favicon.ico')));
 
 ['min.js', 'min.css'].forEach(function(ext) {
     fs.createReadStream(path.join(pathToBundle, bundleName + '.' + ext))
