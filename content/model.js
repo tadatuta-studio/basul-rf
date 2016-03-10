@@ -5,6 +5,11 @@ module.exports = [
         source: 'index.md'
     },
     {
+        title: 'О себе',
+        url: 'about',
+        source: 'about.md'
+    },
+    {
         title: 'Банкротство гражданина',
         url: 'bankruptcy',
         source: 'bankruptcy/bankruptcy.md'
@@ -39,5 +44,10 @@ module.exports = [
         title: 'Процедура наблюдения',
         url: 'supervision-procedure',
         source: 'bankruptcy/supervision-procedure.md'
+    },
+    {
+        title: 'Контакты',
+        url: 'contacts',
+        source: 'contacts.md'
     }
 ];

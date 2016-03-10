@@ -8,7 +8,7 @@
     display: inline-block;
     padding: 15px;
     line-height: 20px;
-    color: #ffd700;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -16,13 +16,13 @@
     margin-left: -15px;
 }
 
-.nav__item:hover {
-    color: #fff;
+a.nav__item:hover {
+    color: #ffd700;
 }
 
 .nav__item_active {
     /*background: #333;*/
-    color: #fff;
+    color: #ffd700;
 }
 
 .nav__submenu {
@@ -47,14 +47,14 @@
     display: block;
     padding: 0 16px;
     line-height: 32px;
-    color: #ffd700;
+    color: #fff;
 }
 
 .nav__submenu-item:hover {
     background: rgba(255, 255, 255, .2);
-    color: #fff;
+    color: #ffd700;
 }
 
 .nav__submenu-item_active {
-    color: #fff;
+    color: #ffd700;
 }

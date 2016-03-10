@@ -1,0 +1,29 @@
+.logo {
+    color: #fff;
+}
+
+a.logo:hover {
+    color: #ffd700;
+}
+
+.logo:before {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+
+    content: "";
+
+    background: url(logo.png) no-repeat;
+    background-size: 100%;
+}
+
+.logo__name {
+    font-size: 2em;
+    text-shadow: 1px 1px #000;
+}
+
+.logo__position {
+    font-size: 18px;
+    padding-left: 2px;
+}

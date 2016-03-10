@@ -5,24 +5,15 @@ block('nav').content()(function() {
             return prev;
         }, {});
 
-    return [
-        {
-            block: 'link',
-            mix: { block: this.block, elem: 'item' },
-            url: data.relPathToRoot,
-            content: 'Главная'
-        },
-        'bankruptcy' === data.url ? {
-            elem: 'item',
-            elemMods: { active: true },
-            content: 'Банкротство гражданина'
-        } : {
-            block: 'link',
-            mix: { block: this.block, elem: 'item' },
-            url: data.relPathToRoot + 'bankruptcy/',
-            content: 'Банкротство гражданина'
-        },
-        {
+    // {
+    //     block: 'link',
+    //     mix: { block: this.block, elem: 'item' },
+    //     url: data.relPathToRoot,
+    //     content: 'Главная'
+    // }
+
+    return ['about', 'bankruptcy', 'submenu', 'contacts'].map(function(item) {
+        if (item === 'submenu') return {
             elem: 'item',
             content: [
                 'Банкротство юридического лица',
@@ -48,6 +39,17 @@ block('nav').content()(function() {
                     }, this)
                 }
             ]
-        }
-    ];
+        };
+
+        return data.url === item ? {
+            elem: 'item',
+            elemMods: { active: true },
+            content: pagesMap[item].title
+        } : {
+            block: 'link',
+            mix: { block: this.block, elem: 'item' },
+            url: data.relPathToRoot + item + '/',
+            content: pagesMap[item].title
+        };
+    }, this);
 });

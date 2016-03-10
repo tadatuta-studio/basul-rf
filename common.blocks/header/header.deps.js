@@ -1,3 +1,3 @@
 ({
-    shouldDeps: ['nav']
+    shouldDeps: ['logo', 'nav']
 })

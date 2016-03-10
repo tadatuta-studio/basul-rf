@@ -1,6 +1,6 @@
 ({
     shouldDeps: [
-        { mods: { slug: ['index'] } },
+        { mods: { slug: ['index', 'about'] } },
         'header',
         'content',
         'footer',

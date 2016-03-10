@@ -7,6 +7,6 @@ provide(BEMDOM.decl(this.name, {}, {
             InfoModal.show('<img src="' + e.target.src.replace('-preview', '') + '">');
         });
     }
-}))
+}));
 
 });
