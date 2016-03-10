@@ -11,7 +11,7 @@ block('header').content()(function() {
         },
         {
             block: 'logo',
-            url: this.data.url,
+            url: this.data.relPathToRoot,
             content: [
                 {
                     elem: 'name',
