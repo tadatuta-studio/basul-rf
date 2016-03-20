@@ -10,7 +10,7 @@ html {
     padding: 0;
     min-height: 100%;
 
-    font-family: "Times New Roman", Times, serif;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
 
     background: url(page.png) no-repeat 80% 80% fixed;
     background-size: auto 70%;
