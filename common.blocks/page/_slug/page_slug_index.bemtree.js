@@ -7,6 +7,9 @@ block('page').mod('slug', 'index').content()(function () {
             block: 'slide'
         },
         {
+            block: 'features'
+        },
+        {
             block: 'footer'
         },
         {
