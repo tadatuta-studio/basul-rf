@@ -1,0 +1,28 @@
+.slide {
+    position: relative;
+
+    background: url(slide.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+    height: 100vh;
+    min-height: 700px;
+}
+
+.slide__title {
+    position: absolute;
+
+    margin: 0;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.slide__consultation {
+    float: right;
+    
+    margin-top: 42px;
+}
