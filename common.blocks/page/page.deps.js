@@ -5,6 +5,7 @@
         'slide',
         'features',
         'content',
+        'modal',
         'footer',
         'metrika'
     ]

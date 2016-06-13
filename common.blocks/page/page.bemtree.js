@@ -7,6 +7,13 @@ block('page').content()(function() {
             block: 'content'
         },
         {
+            block : 'modal',
+            mods : { theme : 'islands', autoclosable : true },
+            content : {
+                block : 'consultation'
+            }
+        },
+        {
             block: 'footer'
         },
         {

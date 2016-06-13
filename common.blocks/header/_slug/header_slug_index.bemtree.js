@@ -1,17 +1,5 @@
-block('header').content()(function() {
+block('header').mod('slug', 'index').content()(function() {
     return [
-        {
-            block: this.block,
-            elem: 'contacts',
-            content: [
-                '+7 978 011 99 11',
-                {
-                    block : 'button',
-                    mods : { theme : 'islands', size : 'l', callback : true },
-                    text : 'Обратный звонок'
-                }
-            ].map(para => ({ elem: 'line', content: para }))
-        },
         {
             block: 'logo',
             url: this.data.relPathToRoot,
