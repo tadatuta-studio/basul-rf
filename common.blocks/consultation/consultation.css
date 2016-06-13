@@ -1,0 +1,22 @@
+.consultation {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 220px;
+    padding: 20px;
+
+    color: white;
+
+    background-image: url(../footer/footer.jpg);
+    background-color: rgba(255, 215, 0, 0.5);
+}
+
+.consultation > .input,
+.consultation > .textarea,
+.consultation > .button {
+    margin-top: 16px;
+}
+
+.consultation > .button::before {
+    background-color: #ffd700;
+}
