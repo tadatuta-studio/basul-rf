@@ -1,7 +1,10 @@
 .footer
 {
-    line-height: 77px;
-    background: #31466f url(footer.jpg);
+
+    background: url(../logo/logo.png) no-repeat, url(footer.jpg);
+    background-size: auto 84%, auto;
+    background-position: 53px center;
+    background-color: #31466f;
     color: #fff;
 }
 
@@ -9,11 +12,16 @@
     display: flex;
 }
 
+.footer__left {
+    width: 25%;
+}
+
 .footer__center {
     flex-grow: 1;
     align-self: center
 }
 
-.footer .link {
+.footer__link,
+.footer__link:hover {
     color: #ffd700;
 }

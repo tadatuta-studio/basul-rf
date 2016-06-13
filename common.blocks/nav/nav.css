@@ -41,6 +41,7 @@ a.nav__item:hover {
 .nav__item:hover .nav__submenu,
 .nav__submenu:hover {
     display: block;
+    z-index: 1;
 }
 
 .nav__submenu-item {
