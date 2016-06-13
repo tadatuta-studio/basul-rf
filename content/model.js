@@ -31,7 +31,7 @@ module.exports = [
         source: 'bankruptcy/external-management.md'
     },
     {
-        title: 'Финансовое оздаровление',
+        title: 'Финансовое оздоровление',
         url: 'financial-recovery',
         source: 'bankruptcy/financial-recovery.md'
     },
