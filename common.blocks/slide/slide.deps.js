@@ -1,5 +1,6 @@
 ({
     shouldDeps: [
-        'consultation'
+        'consultation',
+        { elems: ['title', 'consultation'] }
     ]
 })

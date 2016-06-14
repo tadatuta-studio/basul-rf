@@ -3,7 +3,6 @@ block('slide').content()(function () {
         {
             block : 'slide',
             elem : 'title',
-            tag : 'h1',
             content : 'Банкротство в Крыму без посредников!'
         },
         {

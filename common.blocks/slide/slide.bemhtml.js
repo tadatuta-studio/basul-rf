@@ -4,4 +4,9 @@ block('slide').content()(function() {
         elem: 'section',
         content: applyNext()
     };
-})
+});
+
+
+block('slide').elem('title')(
+    tag()('h1')
+);

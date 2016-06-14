@@ -3,16 +3,13 @@ block('feature').content()(function () {
     return [
         {
             elem : 'title',
-            tag : 'h2',
             content : this.ctx.title
         },
         {
             elem : 'list',
-            tag : 'ul',
             content : list.map(function (item) {
                 return {
                     block : 'list-item',
-                    tag : 'li',
                     content : [
                         {
                             block : 'icon',
@@ -21,7 +18,6 @@ block('feature').content()(function () {
                         },
                         {
                             elem : 'desc',
-                            tag : 'span',
                             content : item.desc
                         }
                     ]
@@ -30,3 +26,11 @@ block('feature').content()(function () {
         }
     ];
 });
+
+block('feature').elem('title')(
+    tag()('h2')
+);
+
+block('feature').elem('list')(
+    tag()('ul')
+);
