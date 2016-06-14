@@ -37,19 +37,24 @@ block('consultation')(
         }
 
         res = res.concat({
-            block : 'textarea',
-            mods : { theme : 'islands', size : 'l', width : 'available' },
-            name : 'problem',
-            placeholder : 'Опишите вашу проблему парой предложений'
+            block : 'consultation',
+            elem : 'problem',
+            content : {
+                block : 'textarea',
+                mods : { theme : 'islands', size : 'l', width : 'available' },
+                name : 'problem',
+                placeholder : 'Опишите вашу проблему парой предложений'
+            }
         });
 
-        return res = res.concat(
-            {
+        return res = res.concat({
+            block : 'consultation',
+            elem : 'confirm',
+            content : {
                 block : 'button',
                 mods : { theme : 'islands', size : 'l', type : 'submit' },
-                mix : [ { block : 'consultation', elem : 'confirm' } ],
                 text : 'Получить консультацию'
             }
-        );
+        });
     })
 );

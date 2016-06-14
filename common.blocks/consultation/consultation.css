@@ -11,12 +11,14 @@
     background-color: rgba(255, 215, 0, 0.5);
 }
 
-.consultation > .input,
-.consultation > .textarea,
-.consultation > .button {
+.consultation__name,
+.consultation__phone,
+.consultation__email,
+.consultation__problem,
+.consultation__confirm {
     margin-top: 16px;
 }
 
-.consultation > .button::before {
+.consultation__confirm .button::before {
     background-color: #ffd700;
 }
