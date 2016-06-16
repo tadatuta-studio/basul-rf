@@ -8,7 +8,13 @@ block('consultation')(
     }),
     content()(function () {
 
-        var res = [
+        var fieldsToCaption = {
+            'name' : 'Ваши имя и фамилия',
+            'phone' : 'Ваш телефон',
+            'email' : 'Адрес электропочты'
+        };
+
+        return [
             {
                 tag : 'h2',
                 content : 'Консультация'
@@ -16,46 +22,36 @@ block('consultation')(
             {
                 tag : 'p',
                 content : 'Оставьте заявку прямо сейчас и наш адвокат поможет найти решение вашей проблемы!'
+            },
+            Object.keys(fieldsToCaption).map(function (field) {
+                return {
+                    block : 'input',
+                    required : true,
+                    mods : { theme : 'islands', size : 'l' },
+                    mix : [ { block : 'consultation', elem : field } ],
+                    name : field,
+                    placeholder : fieldsToCaption[field]
+                };
+            }),
+            {
+                block : 'consultation',
+                elem : 'problem',
+                content : {
+                    block : 'textarea',
+                    mods : { theme : 'islands', size : 'l', width : 'available' },
+                    name : 'problem',
+                    placeholder : 'Опишите вашу проблему парой предложений'
+                }
+            },
+            {
+                block : 'consultation',
+                elem : 'confirm',
+                content : {
+                    block : 'button',
+                    mods : { theme : 'islands', size : 'l', type : 'submit' },
+                    text : 'Получить консультацию'
+                }
             }
         ];
-
-        var obj = {
-            'name' : 'Ваши имя и фамилия',
-            'phone' : 'Ваш телефон',
-            'email' : 'Адрес электропочты'
-        };
-
-        for (var item in obj) {
-            res.push({
-                block : 'input',
-                required : true,
-                mods : { theme : 'islands', size : 'l' },
-                mix : [ { block : 'consultation', elem : item } ],
-                name : item,
-                placeholder : obj[item]
-            });
-        }
-
-        res.push({
-            block : 'consultation',
-            elem : 'problem',
-            content : {
-                block : 'textarea',
-                mods : { theme : 'islands', size : 'l', width : 'available' },
-                name : 'problem',
-                placeholder : 'Опишите вашу проблему парой предложений'
-            }
-        },
-        {
-            block : 'consultation',
-            elem : 'confirm',
-            content : {
-                block : 'button',
-                mods : { theme : 'islands', size : 'l', type : 'submit' },
-                text : 'Получить консультацию'
-            }
-        });
-
-        return res;
     })
 );
