@@ -26,7 +26,7 @@ block('consultation')(
         };
 
         for (var item in obj) {
-            res = res.concat({
+            res.push({
                 block : 'input',
                 required : true,
                 mods : { theme : 'islands', size : 'l' },
@@ -36,7 +36,7 @@ block('consultation')(
             });
         }
 
-        res = res.concat({
+        res.push({
             block : 'consultation',
             elem : 'problem',
             content : {
@@ -45,9 +45,8 @@ block('consultation')(
                 name : 'problem',
                 placeholder : 'Опишите вашу проблему парой предложений'
             }
-        });
-
-        return res = res.concat({
+        },
+        {
             block : 'consultation',
             elem : 'confirm',
             content : {
@@ -56,5 +55,7 @@ block('consultation')(
                 text : 'Получить консультацию'
             }
         });
+
+        return res;
     })
 );
