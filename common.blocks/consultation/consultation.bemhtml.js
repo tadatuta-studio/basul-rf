@@ -2,7 +2,7 @@ block('consultation')(
     tag()('form'),
     attrs()(function () {
         return {
-            action : 'https://formspree.io/your@email.com',
+            action : 'https://formspree.io/' + this.ctx.email,
             method : 'POST'
         };
     }),

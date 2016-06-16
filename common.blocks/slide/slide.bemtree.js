@@ -7,6 +7,7 @@ block('slide').content()(function () {
         },
         {
             block : 'consultation',
+            email : this.data.email,
             mix : { block : 'slide', elem : 'consultation' }
         }
     ];

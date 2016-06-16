@@ -10,7 +10,8 @@ block('page').content()(function() {
             block : 'modal',
             mods : { theme : 'islands', autoclosable : true },
             content : {
-                block : 'consultation'
+                block : 'consultation',
+                email : this.data.email
             }
         },
         {
