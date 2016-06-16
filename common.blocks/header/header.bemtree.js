@@ -7,6 +7,7 @@ block('header').content()(function() {
                 '+7 978 011 99 11',
                 {
                     block : 'button',
+                    mix : { block : 'page', elem : 'callback' },
                     mods : { theme : 'islands', size : 'l', callback : true },
                     text : 'Обратный звонок'
                 }

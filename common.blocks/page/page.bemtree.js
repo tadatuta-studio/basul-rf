@@ -8,6 +8,7 @@ block('page').content()(function() {
         },
         {
             block : 'modal',
+            mix: { block: 'page', elem: 'callback-modal' },
             mods : { theme : 'islands', autoclosable : true },
             content : {
                 block : 'consultation',
