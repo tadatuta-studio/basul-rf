@@ -11,12 +11,24 @@
     background-color: rgba(255, 215, 0, 0.5);
 }
 
+.consultation h2 {
+    font-family: 'DINPro-Regular', PT Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .consultation__name,
 .consultation__phone,
 .consultation__email,
 .consultation__problem,
 .consultation__confirm {
     margin-top: 16px;
+}
+
+.consultation__confirm {
+    text-align: center;
 }
 
 .consultation__confirm .button::before {
