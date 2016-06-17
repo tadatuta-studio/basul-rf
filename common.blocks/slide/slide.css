@@ -1,15 +1,22 @@
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url(DINPro-Regular.woff);
+}
+
 .slide {
     position: relative;
 
     background: url(slide.jpg) no-repeat;
-    background-position: 50%;
+    background-position: 0 -70px;
     background-size: cover;
-
-    height: 100vh;
-    min-height: 700px;
 }
 
 .slide__title {
+    font-family: 'DINPro-Regular', PT Sans, sans-serif;
+    font-size: 31px;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+
     position: absolute;
 
     margin: 0;
@@ -18,11 +25,9 @@
     transform: translateY(-50%);
 
     color: white;
-    text-shadow: 2px 2px black;
+    /*text-shadow: 1px 1px black;*/
 }
 
 .slide__consultation {
     float: right;
-    
-    margin-top: 42px;
 }
