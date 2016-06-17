@@ -15,6 +15,7 @@ block('header').content()(function() {
         },
         {
             block: 'logo',
+            mods : { dark : true },
             url: this.data.relPathToRoot,
             content: [
                 {

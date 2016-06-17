@@ -8,7 +8,7 @@
     display: inline-block;
     padding: 15px;
     line-height: 20px;
-    color: #fff;
+    color: #31466f;
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ a.nav__item:hover {
 
     list-style: none;
 
-    background: #31466f url(../footer/footer.jpg);
+    background: #fff;
 }
 
 .nav__item:hover .nav__submenu,
@@ -48,11 +48,11 @@ a.nav__item:hover {
     display: block;
     padding: 0 16px;
     line-height: 32px;
-    color: #fff;
+    color: #31466f;
 }
 
 .nav__submenu-item:hover {
-    background: rgba(255, 255, 255, .2);
+    background: rgba(49, 70, 111, 0.8);
     color: #ffd700;
 }
 

@@ -1,0 +1,4 @@
+.logo::before {
+    background: url(logo_dark.png) no-repeat;
+    background-size: 100%;
+}

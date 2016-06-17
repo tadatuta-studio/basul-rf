@@ -5,6 +5,7 @@
 
 .nav_footer .nav__item {
     padding: 0;
+    color: #fff;
 }
 
 .nav_footer .nav__item:not(:last-child) {
@@ -26,10 +27,15 @@
     background: none;
 }
 
+.nav_footer .nav__submenu-item {
+    color: #fff;
+}
+
 .nav_footer .nav__item:first-child {
     margin-left: inherit;
 }
 
 .nav_footer .nav__submenu-item:hover {
+    color: #ffd700;
     background: none;
 }

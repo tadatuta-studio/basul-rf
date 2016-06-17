@@ -1,5 +1,5 @@
 .logo {
-    color: #fff;
+    color: #31466f;
 }
 
 a.logo:hover {
@@ -20,7 +20,6 @@ a.logo:hover {
 
 .logo__name {
     font-size: 2em;
-    text-shadow: 1px 1px #000;
 }
 
 .logo__position {
