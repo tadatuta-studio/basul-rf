@@ -2,16 +2,42 @@
     display: flex;
 }
 
+.nav_icons .nav__item {
+    position: relative;
+    font-size: 13px;
+    text-align: center;
+
+    padding-top: 60px;
+    padding-bottom: 0;
+
+    width: 25%;
+}
+
 .nav_icons > .nav__item::before {
     content: '';
+
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
 
     background-image: url(nav_icons.png);
     background-size: 307px 265px;
 
     width: 24px;
     height: 30px;
+}
 
-    margin-right: 8px;
+.nav_icons > .nav__item::after {
+    content: '';
+    border: 3px solid #043668;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
 }
 
 .nav_icons .nav__item_about::before {
