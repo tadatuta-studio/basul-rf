@@ -1,0 +1,34 @@
+.nav_icons {
+    display: flex;
+}
+
+.nav_icons > .nav__item::before {
+    content: '';
+
+    background-image: url(nav_icons.png);
+    background-size: 307px 265px;
+
+    width: 24px;
+    height: 30px;
+
+    margin-right: 8px;
+}
+
+.nav_icons .nav__item_about::before {
+    background-position: -265px -31px;
+    width: 25px;
+}
+
+.nav_icons .nav__item_bankruptcy::before {
+    background-position: -265px -62px;
+}
+
+.nav_icons .nav__item_submenu::before {
+    background-position: -265px -93px;
+}
+
+.nav_icons .nav__item_contacts::before {
+    background-position: -233px 0;
+    width: 31px;
+    height: 29px;
+}

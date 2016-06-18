@@ -1,7 +1,7 @@
 ({
     shouldDeps: [
         { block : 'logo', mods : { dark : true } },
-        'nav',
+        { block : 'nav', mods : { icons : true } },
         { block : 'button', mods : { callback : true } }
     ]
 })

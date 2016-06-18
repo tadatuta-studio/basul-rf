@@ -4,6 +4,7 @@
 }
 
 .nav_footer .nav__item {
+    display: inline-block;
     padding: 0;
     color: #fff;
 }

@@ -28,6 +28,9 @@ block('header').content()(function() {
                 }
             ]
         },
-        { block: 'nav' }
+        {
+            block: 'nav',
+            mods : { icons : true }
+        }
     ];
 });

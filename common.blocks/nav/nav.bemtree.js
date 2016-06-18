@@ -15,6 +15,7 @@ block('nav').content()(function() {
     return ['about', 'bankruptcy', 'submenu', 'contacts'].map(function(item) {
         if (item === 'submenu') return {
             elem: 'item',
+            elemMods: { [item]: true },
             content: [
                 'Банкротство юридического лица',
                 {
@@ -43,11 +44,11 @@ block('nav').content()(function() {
 
         return data.url === item ? {
             elem: 'item',
-            elemMods: { active: true },
+            elemMods: { active: true, [item]: true },
             content: pagesMap[item].title
         } : {
             block: 'link',
-            mix: { block: this.block, elem: 'item' },
+            mix: { block: this.block, elem: 'item', elemMods : { [item] : true } },
             url: data.relPathToRoot + item + '/',
             content: pagesMap[item].title
         };
