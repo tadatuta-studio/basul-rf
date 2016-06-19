@@ -9,6 +9,10 @@
     color: #fff;
 }
 
+.nav_footer .nav__item_active {
+    color: #ffd700;
+}
+
 .nav_footer .nav__item:not(:last-child) {
     margin-right: 30px;
 }
@@ -30,6 +34,10 @@
 
 .nav_footer .nav__submenu-item {
     color: #fff;
+}
+
+.nav_footer .nav__submenu-item_active {
+    color: #ffd700;
 }
 
 .nav_footer .nav__item:first-child {

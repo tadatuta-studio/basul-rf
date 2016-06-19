@@ -1,5 +1,12 @@
 .nav_icons {
     display: flex;
+    width: 50%;
+}
+
+.nav_icons .nav__submenu {
+    top: 85px;
+    width: 150%;
+    text-align: left;
 }
 
 .nav_icons .nav__item {
@@ -7,10 +14,29 @@
     font-size: 13px;
     text-align: center;
 
+    color: #043567;
+    text-decoration: underline;
+
     padding-top: 60px;
     padding-bottom: 0;
 
     width: 25%;
+}
+
+.nav_icons .nav__item_active {
+    color: #374ea2;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nav_icons .nav__item:hover {
+    color: #374ea2;
+    text-decoration: none;
+}
+
+.nav_icons .nav__item:hover::after {
+    background-color: #043668;
+    transition: all 0.2s ease;
 }
 
 .nav_icons > .nav__item::before {
@@ -26,6 +52,8 @@
 
     width: 24px;
     height: 30px;
+
+    z-index: 1;
 }
 
 .nav_icons > .nav__item::after {
@@ -38,6 +66,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+    z-index: 0;
 }
 
 .nav_icons .nav__item_about::before {
@@ -45,16 +74,32 @@
     width: 25px;
 }
 
+.nav_icons .nav__item_about:hover::before {
+    background-position: -265px 0px;
+}
+
 .nav_icons .nav__item_bankruptcy::before {
     background-position: -265px -62px;
+}
+
+.nav_icons .nav__item_bankruptcy:hover::before {
+    background-position: -265px -124px;
 }
 
 .nav_icons .nav__item_submenu::before {
     background-position: -265px -93px;
 }
 
+.nav_icons .nav__item_submenu:hover::before {
+    background-position: -265px -155px;
+}
+
 .nav_icons .nav__item_contacts::before {
     background-position: -233px 0;
     width: 31px;
     height: 29px;
+}
+
+.nav_icons .nav__item_contacts:hover::before {
+    background-position: -233px -30px;
 }
