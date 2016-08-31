@@ -9,7 +9,7 @@ block('consultation')(
     content()(function () {
 
         var fieldsToCaption = {
-            'name' : 'Ваши имя и фамилия',
+            'name' : 'Ваше имя',
             'phone' : 'Ваш телефон',
             'email' : 'Адрес электропочты'
         };
@@ -33,16 +33,6 @@ block('consultation')(
                     placeholder : fieldsToCaption[field]
                 };
             }),
-            {
-                block : 'consultation',
-                elem : 'problem',
-                content : {
-                    block : 'textarea',
-                    mods : { theme : 'islands', size : 'l', width : 'available' },
-                    name : 'problem',
-                    placeholder : 'Опишите вашу проблему парой предложений'
-                }
-            },
             {
                 block : 'consultation',
                 elem : 'confirm',
