@@ -21,11 +21,12 @@ block('nav').content()(function() {
                 {
                     elem: 'submenu',
                     content: [
-                        'bankruptcy-proceedings',
-                        'external-management',
+                        'supervision-procedure',
                         'financial-recovery',
-                        'settlement-agreement',
-                        'supervision-procedure'
+                        'external-management',
+                        'bankruptcy-proceedings',
+                        'settlement-agreement'
+                        
                     ].map(function(url) {
                         return url === data.url ? {
                             elem: 'submenu-item',
