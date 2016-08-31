@@ -5,8 +5,12 @@ block('header').content()(function() {
             elem: 'contacts',
             content: [
                 '+7 978 011 99 11',
-                'bas-ev@mail.ru',
-                'г. Ялта, ул. К. Маркса, 12, кв. 7'
+                {
+                    block : 'button',
+                    mix : { block : 'page', elem : 'callback' },
+                    mods : { theme : 'islands', size : 'l', callback : true },
+                    text : 'Обратный звонок'
+                }
             ].map(para => ({ elem: 'line', content: para }))
         },
         {

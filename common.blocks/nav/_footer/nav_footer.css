@@ -1,0 +1,35 @@
+.nav_footer {
+    font-size: 15px;
+    display: flex;
+}
+
+.nav_footer .nav__item {
+    padding: 0;
+}
+
+.nav_footer .nav__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav_footer .nav__submenu {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    padding: 6px 0 16px;
+
+    font-size: .9em;
+
+    list-style: none;
+
+    background: none;
+}
+
+.nav_footer .nav__item:first-child {
+    margin-left: inherit;
+}
+
+.nav_footer .nav__submenu-item:hover {
+    background: none;
+}

@@ -1,3 +1,8 @@
 ({
-    shouldDeps: ['share', 'copyright', 'link']
+    shouldDeps: [
+        'share',
+        'copyright',
+        'link',
+        { block : 'nav', mods : { footer : true } }
+    ]
 })

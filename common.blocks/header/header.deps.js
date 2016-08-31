@@ -1,3 +1,3 @@
 ({
-    shouldDeps: ['logo', 'nav']
+    shouldDeps: ['logo', 'nav', { block : 'button', mods : { callback : true } }]
 })

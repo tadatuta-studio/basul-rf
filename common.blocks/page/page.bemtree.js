@@ -7,6 +7,15 @@ block('page').content()(function() {
             block: 'content'
         },
         {
+            block : 'modal',
+            mix: { block: 'page', elem: 'callback-modal' },
+            mods : { theme : 'islands', autoclosable : true },
+            content : {
+                block : 'consultation',
+                email : this.data.email
+            }
+        },
+        {
             block: 'footer'
         },
         {

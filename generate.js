@@ -47,7 +47,8 @@ model.forEach(function(page) {
             url: page.url,
             relPathToRoot: page.url ? '../' : '',
             pages: model,
-            content: html
+            content: html,
+            email: 'your@email.com'
         }
     })));
 });

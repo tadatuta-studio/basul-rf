@@ -7,4 +7,22 @@
 .header__contacts {
     float: right;
     line-height: 20px;
+    margin-top: 20px;
+}
+
+.header__contacts button::before {
+    background-color: #ffd700;
+}
+
+.header__line:first-child {
+    font-size: 28px;
+}
+
+.header__line:last-child {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.header__line .button {
+    margin: 6px 0;
 }
