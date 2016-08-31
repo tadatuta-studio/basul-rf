@@ -14,7 +14,7 @@ block('features').content()(function () {
                 },
                 {
                     url: 'i/payment-failure.svg',
-                    desc: 'Начало ликвидации, признание должника банкротом'
+                    desc: 'Возбуждение процедуры банкротства, формирование кредиторских требований'
                 },
                 {
                     url: 'i/business-meeting.svg',
@@ -44,7 +44,7 @@ block('features').content()(function () {
                 },
                 {
                     url: 'i/security.svg',
-                    desc: 'Мы за конфиденциальные деловые отношения'
+                    desc: 'Гарантируем конфиденциальность'
                 }
             ]
         }
