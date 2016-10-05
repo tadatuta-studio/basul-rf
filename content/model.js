@@ -19,6 +19,24 @@ module.exports = [
         url: 'bankruptcy',
         source: 'bankruptcy/bankruptcy.md'
     },
+
+    {
+        title: 'Процедура наблюдения',
+        url: 'sit-supervision',
+        source: 'bankruptcy/sit-supervision.md'
+    },
+    {
+        title: 'Конкурскное производство',
+        url: 'sit-proceedings',
+        source: 'bankruptcy/sit-proceedings.md'
+    },
+    {
+        title: 'Мировое соглашение',
+        url: 'sit-agreement',
+        source: 'bankruptcy/sit-agreement.md'
+    },
+
+
     {
         title: 'Банкротство юридического лица',
         url: 'legal-entity-bankruptcy',

@@ -88,13 +88,23 @@
     background-position: -265px 0px;
 }
 
-.nav_icons .nav__item_bankruptcy::before {
+
+
+.nav_icons .nav__item_sit-submenu::before {
+    background-position: -264px -62px;
+}
+
+.nav_icons .nav__item_sit-submenu:hover::before {
+    background-position: -264px -124px;
+}
+
+/*.nav_icons .nav__item_bankruptcy::before {
     background-position: -264px -62px;
 }
 
 .nav_icons .nav__item_bankruptcy:hover::before {
     background-position: -264px -124px;
-}
+}*/
 
 .nav_icons .nav__item_submenu::before {
     /*background: url(nav_icons-submenu.svg) no-repeat;

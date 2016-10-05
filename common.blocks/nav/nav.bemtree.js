@@ -12,7 +12,34 @@ block('nav').content()(function() {
     //     content: 'Главная'
     // }
 
-    return ['about', 'news', 'bankruptcy', 'submenu', 'contacts'].map(function(item) {
+    return ['about', 'news', /*'bankruptcy',*/ 'sit-submenu', 'submenu', 'contacts'].map(function(item) {
+        if (item === 'sit-submenu') return {
+            elem: 'item',
+            elemMods: { [item]: true },
+            content: [
+                'Банкротство гражданина',
+                {
+                    elem: 'submenu',
+                    content: [
+                        'sit-supervision',
+                        'sit-proceedings',
+                        'sit-agreement'
+                    ].map(function(url) {
+                        return url === data.url ? {
+                            elem: 'submenu-item',
+                            elemMods: { active: true },
+                            content: pagesMap[url].title
+                        } : {
+                            block: 'link',
+                            mix: { block: this.block, elem: 'submenu-item' },
+                            url: data.relPathToRoot + url + '/',
+                            content: pagesMap[url].title
+                        };
+                    }, this)
+                }
+            ]
+        };
+
         if (item === 'submenu') return {
             elem: 'item',
             elemMods: { [item]: true },
