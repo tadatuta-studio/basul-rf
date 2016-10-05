@@ -12,7 +12,7 @@ block('nav').content()(function() {
     //     content: 'Главная'
     // }
 
-    return ['about', 'bankruptcy', 'submenu', 'contacts'].map(function(item) {
+    return ['about', 'news', 'bankruptcy', 'submenu', 'contacts'].map(function(item) {
         if (item === 'submenu') return {
             elem: 'item',
             elemMods: { [item]: true },
@@ -26,7 +26,7 @@ block('nav').content()(function() {
                         'external-management',
                         'bankruptcy-proceedings',
                         'settlement-agreement'
-                        
+
                     ].map(function(url) {
                         return url === data.url ? {
                             elem: 'submenu-item',

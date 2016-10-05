@@ -10,6 +10,11 @@ module.exports = [
         source: 'about.md'
     },
     {
+        title: 'Новости',
+        url: 'news',
+        source: 'news.md'
+    },
+    {
         title: 'Банкротство гражданина',
         url: 'bankruptcy',
         source: 'bankruptcy/bankruptcy.md'

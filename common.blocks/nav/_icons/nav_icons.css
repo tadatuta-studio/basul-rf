@@ -50,7 +50,7 @@
     background-image: url(nav_icons.png);
     background-size: 307px 265px;
 
-    width: 24px;
+    width: 27px;
     height: 30px;
 
     z-index: 1;
@@ -70,28 +70,40 @@
 }
 
 .nav_icons .nav__item_about::before {
+    background-position: 3px -207px;
+    width: 25px;
+    height: 32px;
+}
+
+.nav_icons .nav__item_about:hover::before {
+    background-position: 108px -109px;
+}
+
+.nav_icons .nav__item_news::before {
     background-position: -265px -31px;
     width: 25px;
 }
 
-.nav_icons .nav__item_about:hover::before {
+.nav_icons .nav__item_news:hover::before {
     background-position: -265px 0px;
 }
 
 .nav_icons .nav__item_bankruptcy::before {
-    background-position: -265px -62px;
+    background-position: -264px -62px;
 }
 
 .nav_icons .nav__item_bankruptcy:hover::before {
-    background-position: -265px -124px;
+    background-position: -264px -124px;
 }
 
 .nav_icons .nav__item_submenu::before {
-    background-position: -265px -93px;
+    /*background: url(nav_icons-submenu.svg) no-repeat;
+    background-size: 100%;*/
+    background-position: -164px -173px;
 }
 
 .nav_icons .nav__item_submenu:hover::before {
-    background-position: -265px -155px;
+    background-position: -191px -173px;
 }
 
 .nav_icons .nav__item_contacts::before {
