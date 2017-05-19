@@ -19,7 +19,7 @@
     "enb-borschik": "^2.4.0",
     "enb-js": "^1.1.0",
     "enb-stylus": "^2.4.0",
-    "glob": "^7.1.0",
+    "glob": "^7.1.2",
     "marked": "^0.3.6",
     "mkdirp": "^0.5.1",
     "watch-run": "^1.2.4"
